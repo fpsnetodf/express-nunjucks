@@ -10,7 +10,7 @@ nunjucks.configure('templates', {
 })
 
 app.set('view engine', 'html')
-app.use(express.static(path.join(__dirname, "public")))
+app.use(express.static(path.join(__dirname, "static")))
 
 const PORT = '8000'
 
