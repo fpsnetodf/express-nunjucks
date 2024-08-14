@@ -2,5 +2,11 @@
   "dependencies": {
     "express": "^4.19.2",
     "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  },
+  "scripts" :  {
+    "dev": "npx tailwindcss -i ./public/css/input.css -o ./public/css/style.css"
   }
 }

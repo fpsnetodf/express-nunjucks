@@ -1,5 +1,6 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
+const path = require("path")
 
 var app = express()
 
@@ -9,6 +10,7 @@ nunjucks.configure('templates', {
 })
 
 app.set('view engine', 'html')
+app.use(express.static(path.join(__dirname, "public")))
 
 const PORT = '8000'
 
