@@ -1,0 +1,15 @@
+{% extends "home/modelo.html" %}
+    
+{% block title %}Textes com Express e nunjucks{% endblock title %}
+
+{% block head %}{% endblock head %}
+
+{% block titulo %}{% endblock titulo %}
+{% block conteudo %}
+    {% for l in lista %}
+            <h1 class="text-rose-400 text-lg">express encontrou: <span class="text-green-400 text-xl">{{ l }} </span></h1>
+    {% endfor %}
+            <p class="text-center text-lg font-bold text-violet-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam nihil iusto officia dicta assumenda laborum doloremque velit dolores unde quod ratione ex ipsam recusandae in hic, quis, ad vel nulla?</p>
+        
+{% endblock conteudo %}
+{% block footer %}{% endblock footer %}

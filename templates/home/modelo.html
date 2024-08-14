@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="nunjucks.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>
+        {% block title %}{% endblock title %}
+    </title>
+    {% block head %}{% endblock head %}
+</head>
+<body>
+    {% block titulo %}{% endblock titulo %}
+    {% block conteudo %}{% endblock conteudo %}
+    {% block footer %}{% endblock footer %}
+    
+</body>
+</html>
