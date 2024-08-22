@@ -1,0 +1,22 @@
+{% extends "home/modelo.html" %}
+    
+{% block title %}
+        Página contatos
+{% endblock title %}
+
+{% block head %}{% endblock head %}
+
+{% block titulo %}
+        {% include "home/navbar.html" %}
+{% endblock titulo %}
+
+{% block conteudo %}
+   <p class="text-2xl text-green-400 mt-20 text-center">Página contatos</p>
+   {% for l in lista %}
+    <p class="text-rose-400 text-xl text-center">{{ l }}</p>
+   {% endfor %}
+{% endblock conteudo %}
+
+{% block footer %}
+        {% include "home/footer.html" %}
+{% endblock footer %}

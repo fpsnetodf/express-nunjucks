@@ -7,6 +7,8 @@
     "tailwindcss": "^3.4.10"
   },
   "scripts" :  {
-    "dev": "npx tailwindcss -i ./static/css/input.css -o ./static/css/style.css"
+    "dev": "npx tailwindcss -i ./static/css/input.css -o ./static/css/style.css --watch",
+    "start": "node index.js"
+    
   }
 }
